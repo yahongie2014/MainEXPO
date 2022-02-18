@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "framework",
+    "slug": "framework",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coder79",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Your current location will be displayed on the map and used for directions"
+      },
+      "buildNumber": "1"
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAGF8cAOPFPIKCZYqxuibF9xx5XD4JBb84"
+        }
+      },
+      "googleServicesFile": "./release/google-services.json",
+      "package": "com.coder79",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "platforms": ["android", "ios"],
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icons/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/sounds/notification-sound.wav",
+            "./assets/sounds/notification-sound.wav"
+          ]
+        }
+      ]
+    ],
+    "description": "BaseProject"
+  }
+}
