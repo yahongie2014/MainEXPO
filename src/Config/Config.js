@@ -1,7 +1,7 @@
 import { Home, Contact, Notifications, Portfolio } from "@containers";
 
 const Config = {
-  Language: "ar",
+  Language: "en",
   Notification: [
     {
       enabled: true,
@@ -12,7 +12,7 @@ const Config = {
       header: false,
     },
   ],
-  Layout: "RTL",
+  Layout: "LTR",
   Main_Drawer_Bar: true,
   listLanguage: [
     { label: `🇺🇸 English`, key: "en", name: "English" },
