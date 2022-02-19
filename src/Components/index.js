@@ -11,6 +11,3 @@ export const DrawerContent = _DrawerContent;
 
 import _MenuButton from "./MenuButton";
 export const MenuButton = _MenuButton;
-
-import _TabBar from "./TabBar";
-export const TabBar = _TabBar;

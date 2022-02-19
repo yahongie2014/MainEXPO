@@ -7,9 +7,30 @@
 ## Install
 
 You can run By Excute `expo start -c `:
+Scan QR Code On expo App on your Device
+and wait bundle build
 
 ```
 Ex: http://http://localhost:19002
+[05:10:51]
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█ ▄▄▄▄▄ █▀▄█▀  █ ▄█ ▄▄▄▄▄ █
+█ █   █ █▄   ▄██  █ █   █ █
+█ █▄▄▄█ █ ▀█▀█ ▀ ██ █▄▄▄█ █
+█▄▄▄▄▄▄▄█ ▀▄█ █ █▄█▄▄▄▄▄▄▄█
+█  ▀ ██▄▄▀█ ▀█▄▀▄▄▀  ▄▀▄▄▀█
+█▀▀▀ ▀█▄ ▀▄▄██ ▄▀▄▄▀ ▀▀█▄▄█
+█▄▀▀█▀▀▄  ▀▀▀ ▄ █▀█ ▄█ ██▀█
+█▄▀▀█▄▀▄▄▀▄██ ▀██ ▄▄ ▀▀██▄█
+█▄▄█▄██▄▄▀ ▀▄█▀▄  ▄▄▄ █ ▄ █
+█ ▄▄▄▄▄ █▄█▀▀██▄  █▄█  ▀▄ █
+█ █   █ █▀ ▀   ▀▀▄ ▄▄ █▀█▄█
+█ █▄▄▄█ █▀█▀    █  █▄  ▄█▄█
+█▄▄▄▄▄▄▄█▄█▄▄▄█▄█▄███▄▄█▄▄█
+
+[05:10:51] Your native app is running at exp://192.168.1.3:19000
+Logs for your project will appear below. Press Ctrl+C to exit.
+
 ```
 
 ## Specs and Project roots
@@ -45,18 +66,29 @@ Ex: http://http://localhost:19002
         └───reducers
 ```
 
-My Guideline in My Project To Create Task
+Installed Packages
 
 ```
-- Require Composer lib To Create Command Line
-    "php": "^7.3|^8.0",
-    "symfony/console": "2.6.7",
-    "ext-pdo": "*"
-- Create Install Schema To Migrate DB queries with relations from cart.sql !important
-- Connect To Mysql DB With PDO Functions,
-- Define config db connect and flag installed 0 first time.
-- add Bootstrab css & js to display table record for carts.
-- add #!/usr/bin/env php  called coder in my project to start command.
+-expo-notifications
+-expo-permissions
+-expo-status-bar
+-i18next
+-react-native-gesture-handler
+-react-native-paper
+-react-native-reanimated
+-react-native-safe-area-context
+-react-native-screens
+-react-native-svg
+-react-native-vector-icons
+-reactotron-react-native
+-reactotron-redux
+-redux
+-redux-logger
+-redux-thunk
+-react-navigation/native-stack
+-react-navigation/stack
+-react-navigation/drawer
+-react-navigation/material-bottom-tabs
 ```
 
 ## #License By:
