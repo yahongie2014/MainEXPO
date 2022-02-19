@@ -6,15 +6,15 @@ import { Provider } from "react-redux";
 import configureStore from "@redux";
 import RootRouter from "./src/RootRouter";
 import { Images } from "@config/Images";
-import "./ReactotronConfig";
 import "react-native-gesture-handler";
 import "react-native-screens";
+import "./ReactotronConfig";
 
 const store = configureStore();
 
 const fontData = {
-  Jozoor: require("@assets/fonts/JF_FLAT_REGULAR.otf"),
-  Montserrat: require("@assets/fonts/MontserratAlternates.otf"),
+  Jozoor: require("@fonts/JF_FLAT_REGULAR.otf"),
+  Montserrat: require("@fonts/MontserratAlternates.otf"),
 };
 
 export default class App extends React.Component {

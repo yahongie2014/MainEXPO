@@ -10,7 +10,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.coder79",
@@ -36,7 +38,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
     "plugins": [
       [
         "expo-notifications",

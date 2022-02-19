@@ -1,14 +1,14 @@
 import Reactotron from "reactotron-react-native";
 import { reactotronRedux as reduxPlugin } from "reactotron-redux";
-import Constants from 'expo-constants';
+import Constants from "expo-constants";
 
 console.disableYellowBox = true;
 
 if (Constants.isDevice) {
   // test on real device: change to your local config
-  Reactotron.configure({ name: "MainExpo", host: "http://localhost:19002" });
+  Reactotron.configure({ name: "framework" });
 } else {
-  Reactotron.configure({ name: "MainExpo" });
+  Reactotron.configure({ name: "framework" });
 }
 Reactotron.useReactNative({
   asyncStorage: { ignore: ["secret"] },
