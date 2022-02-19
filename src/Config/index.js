@@ -1,6 +1,7 @@
 /** @format */
 
 import _Images from "./Images";
+import _Fonts from "./Fonts";
 import _Languages from "./Languages";
 import _Config from "./Config";
 import reactotron from "reactotron-react-native";
@@ -33,6 +34,7 @@ export const Color = _Color;
 export const Images = _Images;
 export const Languages = _Languages;
 export const Config = _Config;
+export const Fonts = _Fonts;
 export const registerForPushNotification = _registerForPushNotificationsAsync;
 export const Routes = _API;
 export const log = _log;

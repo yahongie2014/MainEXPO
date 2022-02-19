@@ -1,10 +1,19 @@
 const createExpoWebpackConfigAsync = require("@expo/webpack-config");
+
 const path = require("path");
-module.exports = async function (env, argv) {
-  const config = await createExpoWebpackConfigAsync(env, argv);
+module.exports = async function (env, argv, loaders) {
+  const config = await createExpoWebpackConfigAsync(env, argv, loaders);
+  loaders = [
+    {
+      test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg|otf)$/,
+      loader: "url-loader?limit=100000",
+    },
+  ];
   // If you want to add a new alias to the config.
+  config.resolve.extensions["extensions"] = [".js", ".jsx", ".web.js"];
   config.resolve.alias = {
     ...config.resolve.alias,
+    modulesDirectories: path.resolve(__dirname, "node_modules"),
     "@components": path.resolve(__dirname, "src/Components/"),
     "@containers": path.resolve(__dirname, "src/Containers/"),
     "@config": path.resolve(__dirname, "src/Config/"),

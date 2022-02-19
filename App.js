@@ -5,17 +5,12 @@ import AppLoading from "expo-app-loading";
 import { Provider } from "react-redux";
 import configureStore from "@redux";
 import RootRouter from "./src/RootRouter";
-import { Images } from "@config/Images";
+import { Images, Fonts } from "@config/Images";
 import "react-native-gesture-handler";
 import "react-native-screens";
-import "./ReactotronConfig";
+// import "./ReactotronConfig";
 
 const store = configureStore();
-
-const fontData = {
-  Jozoor: require("@fonts/JF_FLAT_REGULAR.otf"),
-  Montserrat: require("@fonts/MontserratAlternates.otf"),
-};
 
 export default class App extends React.Component {
   constructor(props) {
@@ -43,7 +38,7 @@ export default class App extends React.Component {
 
   loadAssets = async () => {
     const imageAssets = this.cacheImages([Images.logo, Images.imageHolder]);
-    const fontAssets = this.cacheFonts([fontData]);
+    const fontAssets = this.cacheFonts([Fonts]);
     await Promise.all([...imageAssets, ...fontAssets]);
   };
   render() {

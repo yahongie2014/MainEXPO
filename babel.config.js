@@ -8,16 +8,7 @@ module.exports = function (api) {
         "babel-plugin-module-resolver",
         {
           modulesDirectories: ["node_modules"],
-          extensions: [
-            ".js",
-            ".jsx",
-            ".es",
-            ".es6",
-            ".mjs",
-            ".ts",
-            ".tsx",
-            "otf",
-          ],
+          extensions: [".js", ".jsx", ".es", ".es6", ".mjs", ".ts", ".tsx"],
           alias: {
             "@components": "./src/Components",
             "@config": "./src/Config",
