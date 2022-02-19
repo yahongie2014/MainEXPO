@@ -1,5 +1,11 @@
 import React from "react";
-import { ActivityIndicator, View, StyleSheet, StatusBar } from "react-native";
+import {
+  ActivityIndicator,
+  View,
+  StyleSheet,
+  StatusBar,
+  Platform,
+} from "react-native";
 import { connect } from "react-redux";
 import i18n, { t } from "@i18n";
 import {

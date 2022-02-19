@@ -8,7 +8,7 @@ import RootRouter from "./src/RootRouter";
 import { Images, Fonts } from "@config/Images";
 import "react-native-gesture-handler";
 import "react-native-screens";
-// import "./ReactotronConfig";
+import "./ReactotronConfig";
 
 const store = configureStore();
 
