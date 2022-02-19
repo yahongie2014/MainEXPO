@@ -33,6 +33,7 @@
     "expo-permissions": "^13.1.1",
     "expo-status-bar": "~1.2.0",
     "expo-updates": "~0.11.6",
+    "fs": "0.0.1-security",
     "i18next": "^21.6.11",
     "moment": "^2.29.1",
     "native-base": "^3.3.6",
@@ -64,6 +65,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "@types/react-native": "^0.64.23",
+    "typescript": "^4.3.5"
   }
 }
