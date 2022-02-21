@@ -6,7 +6,7 @@
 
 ## Install
 
-You can run By Excute `expo start -c `:
+You can run By Excute `npx expo start -c `:
 Scan QR Code On expo App on your Device
 and wait bundle build
 
@@ -90,6 +90,33 @@ Installed Packages
 -react-navigation/drawer
 -react-navigation/material-bottom-tabs
 ```
+
+## Build Production Mode
+
+you need to excute this command
+
+```
+npx expo export --public-url https://example.com/  must be real server with https
+
+```
+
+then after finsh bundle create you need to upload dist folder on th public url
+finally excute this command
+
+```
+For All platform u assign in app.json
+
+- npx expo build
+
+For Options :
+- npx expo build:android
+- npx expo build:ios
+- npx expo build:web
+
+```
+
+After That log at your expo account
+Then download final release
 
 ## #License By:
 
