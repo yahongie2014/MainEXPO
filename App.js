@@ -5,7 +5,7 @@ import AppLoading from "expo-app-loading";
 import { Provider } from "react-redux";
 import configureStore from "@redux";
 import RootRouter from "./src/RootRouter";
-import { Images, Fonts } from "@config/Images";
+import { Images, Fonts } from "@config";
 import "react-native-gesture-handler";
 import "react-native-screens";
 import "./ReactotronConfig";

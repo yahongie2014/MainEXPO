@@ -7,10 +7,10 @@ import { Config } from "@config";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { navigationRef } from "./NavigationService";
 import * as Linking from "expo-linking";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 
 const Drawer = createDrawerNavigator();
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const prefix = Linking.createURL("/");

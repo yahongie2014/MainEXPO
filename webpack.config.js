@@ -3,7 +3,16 @@ const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 const node_modules = path.resolve(__dirname, "node_modules");
 
 module.exports = async function (env, argv) {
-  const config = await createExpoWebpackConfigAsync(env, argv);
+  const config = await createExpoWebpackConfigAsync(
+    {
+      ...env,
+      babel: {
+        dangerouslyAddModulePathsToTranspile: ["@evanbacon"],
+      },
+      plugins: ["react-native-reanimated/plugin"],
+    },
+    argv
+  );
 
   config.module.rules.push({
     test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg|otf)$/,

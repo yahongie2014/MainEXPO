@@ -11,9 +11,13 @@
       "backgroundColor": "#ffffff"
     },
     "packagerOpts": {
-      "assetExts": ["ttf", "otf", "wav", "mp4"]
+      "assetExts": [
+        "ttf",
+        "otf",
+        "wav",
+        "mp4"
+      ]
     },
-
     "assetBundlePatterns": [
       "assets/*",
       "assets/images/*",
@@ -52,7 +56,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "platforms": ["android", "ios", "web"],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
     "plugins": [
       [
         "expo-notifications",
