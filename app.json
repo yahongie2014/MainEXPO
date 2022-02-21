@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "jsEngine": "hermes",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -27,6 +28,7 @@
     ],
     "ios": {
       "supportsTablet": true,
+      "jsEngine": "jsc",
       "bundleIdentifier": "com.coder79",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Your current location will be displayed on the map and used for directions"
@@ -39,6 +41,7 @@
           "apiKey": "AIzaSyAGF8cAOPFPIKCZYqxuibF9xx5XD4JBb84"
         }
       },
+      "jsEngine": "hermes",
       "useNextNotificationsApi": true,
       "permissions": [
         "READ_EXTERNAL_STORAGE",

@@ -4,10 +4,10 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 import { Provider } from "react-redux";
 import configureStore from "@redux";
-import RootRouter from "./src/RootRouter";
-import { Images, Fonts } from "@config";
+import RootRouter from "@main";
+import { Images, Fonts, registerForPushNotificationsAsync } from "@config";
 import "react-native-gesture-handler";
-import "react-native-screens";
+import { enableScreens } from "react-native-screens";
 import "./ReactotronConfig";
 
 const store = configureStore();
@@ -17,11 +17,11 @@ export default class App extends React.Component {
     super(props);
     this.state = { appIsReady: false };
   }
-  async componentWillMount() {}
 
-  async componentWillUnmount() {}
-
-  async componentDidMount() {}
+  async componentDidMount() {
+    enableScreens(true);
+    registerForPushNotificationsAsync();
+  }
 
   cacheImages = (images) => {
     return images.map((image) => {

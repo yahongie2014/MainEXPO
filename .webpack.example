@@ -1,5 +1,5 @@
-const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 const path = require("path");
+const createExpoWebpackConfigAsync = require("@expo/webpack-config");
 const node_modules = path.resolve(__dirname, "node_modules");
 
 module.exports = async function (env, argv) {
@@ -11,6 +11,8 @@ module.exports = async function (env, argv) {
     exclude: /node_modules/,
     use: "babel-loader",
   });
+
+  // If you want to add a new alias to the config.
 
   config.resolve.extensions["extensions"] = [".js", ".jsx", ".web.js"];
   Object.assign(config.resolve.alias, {

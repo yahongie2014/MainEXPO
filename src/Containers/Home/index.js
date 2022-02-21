@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import * as Updates from "expo-updates";
 import { connect } from "react-redux";
-import { View, I18nManager, Picker, Alert, Text } from "react-native";
+import { View, I18nManager, Alert, Text, Picker } from "react-native";
 import {
   setAppLayoutDirection,
   setAppLanguage,
 } from "@actions/SwitchDirection";
-import i18n, { t } from "@i18n";
+import { t } from "@i18n";
 import styles from "./styles";
 
 class Home extends Component {
@@ -14,7 +14,6 @@ class Home extends Component {
     super(props);
     this.state = {};
   }
-
   _SwitchLang(locale) {
     Alert.alert(t(`general:Confirm`), t(`general:SwitchRtlConfirm`), [
       {

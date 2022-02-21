@@ -3,7 +3,6 @@ import { reactotronRedux as reduxPlugin } from "reactotron-redux";
 import Constants from "expo-constants";
 
 console.disableYellowBox = true;
-
 if (Constants.isDevice) {
   // test on real device: change to your local config
   Reactotron.configure({ name: "framework" });

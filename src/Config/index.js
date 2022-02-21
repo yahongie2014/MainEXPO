@@ -9,7 +9,6 @@ import _Validate from "./Validate";
 import _Validator from "./Validator";
 import _Color from "./Color";
 import * as _API from "./Routes";
-import _registerForPushNotificationsAsync from "./firebase";
 
 const _log = (values) => __DEV__ && reactotron.log(values);
 const _warn = (values) => __DEV__ && reactotron.warn(values);
@@ -35,7 +34,7 @@ export const Images = _Images;
 export const Languages = _Languages;
 export const Config = _Config;
 export const Fonts = _Fonts;
-export const registerForPushNotification = _registerForPushNotificationsAsync;
+export const registerForPushNotificationsAsync = require("./firebase");
 export const Routes = _API;
 export const log = _log;
 export const warn = _warn;

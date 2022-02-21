@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { Text } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 import {
   DrawerItemList,
   DrawerContentScrollView,
@@ -10,10 +9,8 @@ import { t } from "@i18n";
 
 const DrawerContent = (props) => (
   <DrawerContentScrollView {...props}>
-    <SafeAreaProvider style={styles.container}>
-      <Text style={styles.header}>{t("lists")}</Text>
-      <DrawerItemList {...props} />
-    </SafeAreaProvider>
+    <Text style={styles.header}>{t("lists")}</Text>
+    <DrawerItemList {...props} />
   </DrawerContentScrollView>
 );
 export default DrawerContent;
