@@ -1,0 +1,21 @@
+{
+  "common": {
+    "lists": "القائمه"
+  },
+  "general": {
+    "Welcome": "اهلاُ بك فى تغيير اللغات !",
+    "currentLanguage": "اللغة الحالية",
+    "SwitchRtlConfirm": "تتطلب تبديل اللغة إعادة تحميل التطبيق ، هل تريد المتابعة؟",
+    "Confirm": "تأكيد",
+    "changeLanguage": "تغيير اللغة",
+    "OK": "تمام",
+    "CANCEL": "الغاء",
+    "next": "التالى",
+    "get_layout": "معرفه الاتجاه"
+  },
+  "lists": {
+    "Home": "الرئيسيه",
+    "Contact": "اتصل بنا",
+    "Notifications": "الاشعارات"
+  }
+}
